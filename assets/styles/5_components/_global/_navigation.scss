@@ -1,0 +1,15 @@
+nav.navigation {
+    .navigation__inner {
+        // layout
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation__logo {
+        img {
+            // layout
+            width: rem-calc(30);
+        }
+    }
+}

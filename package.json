@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:https": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.11",
+    "@types/node": "^18.17.11",
+    "dotenv": "^16.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.4.3"
+  },
+  "dependencies": {
+    "@netlify/plugin-lighthouse": "^5.0.0",
+    "@nuxtjs/supabase": "^1.0.2",
+    "@storyblok/nuxt": "^5.4.4",
+    "axios": "^1.4.0",
+    "gsap": "^3.11.5",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

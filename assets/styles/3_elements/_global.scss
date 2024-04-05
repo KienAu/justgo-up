@@ -1,0 +1,31 @@
+body {
+  // typo
+  color: $color-primary;
+  font-family: $font-primary;
+}
+
+a {
+  // typo
+  color: $color-primary;
+  text-decoration: none;
+}
+
+ul {
+  // layout
+  padding-left: 0;
+}
+
+li {
+  // typo
+  list-style-type: none;
+}
+
+img {
+  // layout
+  max-width: 100%;
+}
+
+section {
+  // layout
+  padding: rem-calc(32 0);
+}

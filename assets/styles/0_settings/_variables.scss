@@ -1,0 +1,18 @@
+@use '../1_tools/rem-value';
+
+// Breakpoint
+$breakpoints: (
+  "smallMobile": rem-calc(576),
+  "bigMobile": rem-calc(768),
+  "tablet": rem-calc(1024),
+  "laptop": rem-calc(1440),
+  "desktop": rem-calc(1920),
+  "2k": rem-calc(2560),
+);
+
+// Fonts
+$font-primary: "Roboto";
+
+// Colors
+$color-primary: #333;
+$color-primary-white: #fff;

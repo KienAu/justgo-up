@@ -1,0 +1,31 @@
+// Grid
+$padding-inline: rem-calc(32);
+$content-max-width: rem-calc(1440);
+$breakout-max-width: rem-calc(1920);
+$breakout-size: calc(($breakout-max-width - $content-max-width) / 2);
+
+.grid-content {
+    // layout
+    display: grid;
+    grid-template-columns: [full-width-start] minmax($padding-inline, 1fr) [
+        breakout-start] minmax(0, $breakout-size) 
+        [content-start] min(100% - ($padding-inline * 2), $content-max-width) [content-end] 
+        minmax(0, $breakout-size) [breakout-end] 
+        minmax($padding-inline, 1fr) [full-width-end];
+}
+
+.grid-content > :not(.breakout, .fullwidth) {
+    // layout
+    grid-column: content;
+}
+
+.grid-content > .breakout {
+    // layout
+    grid-column: breakout;
+}
+
+.grid-content > .fullwidth {
+    // layout
+    grid-column: full-width;
+
+}
